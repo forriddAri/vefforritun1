@@ -6,11 +6,14 @@
     </head>
     <body>
         <h1><u><b>Panta</b></u></h1>
-        <p>Skemmtilegast er að mæta og borða hægt er að sækja eða fá heimsent.</p>
+        <p>Skemmtilegast er að mæta og borða en hægt er að sækja eða fá heimsent.</p>
         <h2><b><u>Form</u></b></h2>
         <h3><b>Panta borð</b></h3>
         <ul>
             <li>Hvenær</li>
+            <label for="appt">Velja tíma</label>
+            <input type="time" name="" id="appt" name="appt">
+            <input type="velja">
             <li>Fjöldi</li>
             <li>Eithvað sem við ættum að vita</li>
         </ul>
@@ -27,9 +30,9 @@
         </ul>
         <h3><b>Samþykkja og panta</b></h3>
         <ul>
-           <li> <input type="checkbox" id="samþykki" name="samþykki"> </li>
             <label for="samþykki">Ég samþykki skilmála Gums og Glans</label>
-            <li> <button type = "button" onclick="alert('Þú hefur pantað')"> Panta</button> </li>
+            <input type="checkbox" id="samþykki" name="samþykki"> </li>
+            <input type = "submit" value="submit" onclick="alert('Þú hefur pantað')"> Panta</button> </li>
         </ul>
 
 
