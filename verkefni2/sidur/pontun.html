@@ -11,15 +11,23 @@
         <h3><b>Panta borð</b></h3>
         <ul>
             <li>Hvenær</li>
-            <label for="appt">Velja tíma</label>
+            <label for="timi">Velja tíma</label>
             <input type="time" name="" id="timi" name="timi">
-            <input type="submit">
+            <input type="submit">velja
             <li>Fjöldi</li>
+            <label for="Fjöldi">Fjöldi(frá 1 til 10)</label>
+            <input type="number" id="fjöldi" name="fjöldi" min="1" max="10">
+            <input type="submit" value="velja">
             <li>Eithvað sem við ættum að vita</li>
+            <label for="auka"> auka upplýsingar(t.d. ofnæmi):</label>
+            <input type="text" name="auka" id="auka">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Velja">
         </ul>
         <h3><b>Panta mat</b></h3>
         <ul>
             <li>Réttir</li>
+            
             <li>Heimilisfang</li>
         </ul>
         <h3><b>Þínar upplýsingar</b></h3>
@@ -32,7 +40,7 @@
         <ul>
             <label for="samþykki">Ég samþykki skilmála Gums og Glans</label>
             <input type="checkbox" id="samþykki" name="samþykki"> </li>
-            <input type = "submit" value="submit" onclick="alert('Þú hefur pantað')"> Panta</button> </li>
+            <input type = "submit" value="Panta" onclick="alert('Þú hefur pantað')"> </button> </li>
         </ul>
 
 
