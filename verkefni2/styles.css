@@ -3,22 +3,72 @@
     margin: 0%;
     padding: 0%;
  }
+body{
+   text-align: center;
+}
+ /* Reiknum stærð á öllum boxum sem border-box */
+ html {
+   box-sizing: border-box;
+ }
+ /* og látum erfast á allt */
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
 
+ a.link{
+   color: #2f0505;
+   padding: 1%;
+ }
 
  h1{
     color: #ffe7ae;
     background-color: #2f0505;
     text-align: center;
+    padding: 0.5%;
  }
  .head{
     color: #ffe7ae;
     background-color: #2f0505;
     border-bottom: 8px #ffe7ae solid;
     text-align: center;
+    padding: 0.5%;
  }
 .bhead{
     text-align: center;
     color: #2f0505;
-    margin: 5%;
-
+    background-color: #fff9ee;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
+footer{
+   color: #ffe7ae;
+    background-color: #2f0505;
+    border-top: 8px #ffe7ae solid;
+    text-align: center;
+    padding: 0.5%;
+}
+
+
+div{
+   display: inline-block;
+}
+
+
+.boxes{
+   display: inline-block;
+   text-align: center;
+   
+   margin: 1rem;
+   padding: 1rem;
+   width: 40%;
+   height: 100%;
+   vertical-align: top;
+}
+
+h2{
+   border-top: #ffe7ae solid;
+}
+
