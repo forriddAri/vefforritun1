@@ -1,0 +1,24 @@
+
+ *{
+    margin: 0%;
+    padding: 0%;
+ }
+
+
+ h1{
+    color: #ffe7ae;
+    background-color: #2f0505;
+    text-align: center;
+ }
+ .head{
+    color: #ffe7ae;
+    background-color: #2f0505;
+    border-bottom: 8px #ffe7ae solid;
+    text-align: center;
+ }
+.bhead{
+    text-align: center;
+    color: #2f0505;
+    margin: 5%;
+
+}
