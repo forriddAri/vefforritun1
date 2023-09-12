@@ -80,6 +80,34 @@ div{
    vertical-align: top;
 }
 
+.pboxesr{
+   display: inline-block;
+   padding: 1rem;
+   width: 49%;
+   vertical-align: top;
+   text-align: right;
+}
+
+.pboxesl{
+   display: inline-block;
+   padding: 1rem;
+   width: 49%;
+   vertical-align: top;
+   text-align: left;
+}
+
+.pantboxes{
+   display: inline-block;
+   text-align: center;
+   margin: 1rem;
+   padding: 1rem;
+   width: 50%;
+   height: 1%;
+   vertical-align: top;
+   border: 2px #ffe7ae solid;
+}
+
+
 .story{
    text-align: center;   
 }
@@ -88,6 +116,18 @@ div{
 .le{
    border-top: #ffe7ae solid;
    padding-right: 23rem;
+   padding-bottom: 1rem;
+   padding-top: 1rem;
 }
+.mlink{
+   padding-right: 30rem;
+   padding-bottom: 1rem;
+}
+
+.od{
+   background-color: #ffe7ae;
+}
+
+
 
 

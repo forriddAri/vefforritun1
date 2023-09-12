@@ -5,12 +5,7 @@
         <title>Pant...að vera fyrstur</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
-    <style>
-        table,th,tr{
-            border: 1px solid forestgreen;
-        }
-        
-    </style>
+    
     <body>
         <h1><u><b>Panta</b></u></h1>
         <p class="head">Skemmtilegast er að mæta og borða en hægt er að sækja eða fá heimsent.</p>
@@ -21,9 +16,10 @@
             <b>Pöntunarsíða</b>
         </p>
         <h2><b><u>Form</u></b></h2>
-        <h3><b>Panta borð</b></h3>
-        
-            <li>Hvenær?</li>
+    
+        <div>
+        <section class="pantboxes">
+            <h3><b>Panta borð</b></h3>
             <label for="timi">Velja tíma</label>
             <input type="time" id="timi" name="timi">
             <li>Fjöldi?</li>
@@ -33,10 +29,11 @@
             <li>Eithvað sem við ættum að vita?</li>
             <label for="auka"> Auka upplýsingar(t.d. ofnæmi):</label>
             <input type="text" name="auka" id="auka">
+        </section>
             
-        
+        <section class="pantboxes">
         <h3><b>Panta mat</b></h3>
-            <table style="width: 20%;">
+            <table>
                 <tr>
                     <th>Réttir</th>
                 </tr>
@@ -60,24 +57,29 @@
                     <td><label for="Fjöldi">Sleipt kjöt á priki</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>2900</td>
                 </tr>
             </table>
-            <li>Heimilisfang</li>
-            <input type="text" placeholder="Ekkitil Stræti">
-       
+        </section>
+    </div>
+
+
+    <div>
+            <section class="pantboxes">
         <h3><b>Þínar upplýsingar</b></h3>
-        
             <li>Nafn(nauðsynlegt)</li>
             <input type="text" placeholder="Loremus Ipsumson" required>
             <li>Netfang(nauðsynlegt)</li>
             <input type="email" placeholder="gervigaur@gmail.com" required>
             <li>Sími (nauðsynlegt)</li>
             <input type="tel" placeholder="+354 420 6969" required>
-       
+        </section>
+        <section class="pantboxes">
         <h3><b>Samþykkja og panta</b></h3>
        
             <label for="samþykki">Ég samþykki skilmála Gums og Glans</label>
             <input type="checkbox" id="samþykki" name="samþykki" required> </li>
             <input type = "submit" value="Panta" onclick="alert('Þú hefur pantað')"> </button> </li>
             <input type="reset" value="Endursetja" >
+        </section>
+        </div>
             <audio autoplay src="../audio/spidermanpizza.mp3">pizza time</audio>
     
 
