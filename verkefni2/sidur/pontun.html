@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title>Pant...að vera fyrstur</title>
         <link rel="stylesheet" href="../styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        
     </head>
     
     <body>
@@ -15,60 +19,115 @@
             <u><a class="link" href="matsedill.html"> Matseðill</a></u>
             <b>Pöntunarsíða</b>
         </p>
-        <h2><b><u>Form</u></b></h2>
+        <h2><b><u>Pöntun</u></b></h2>
     
+        <div class="rammi">
         <div>
         <section class="pantboxes">
             <h3><b>Panta borð</b></h3>
             <label for="timi">Velja tíma</label>
-            <input type="time" id="timi" name="timi">
-            <li>Fjöldi?</li>
-            <label for="Fjöldi">Fjöldi fólks (frá 1 til 10) </label>
+            <p><input type="time" id="timi" name="timi"></p>
+            <p>Fjöldi?</p>
+            <label for="Fjöldi"> </label>
             <input type="number" id="fjöldi" name="fjöldi" min="1" max="10">
-            <input type="submit" value="Velja">
-            <li>Eithvað sem við ættum að vita?</li>
+            <p>Eithvað sem við ættum að vita?</>
             <label for="auka"> Auka upplýsingar(t.d. ofnæmi):</label>
-            <input type="text" name="auka" id="auka">
+            <p><input type="text" name="auka" id="auka"></p>
         </section>
             
         <section class="pantboxes">
         <h3><b>Panta mat</b></h3>
-            <table>
-                <tr>
-                    <th>Réttir</th>
-                </tr>
-                <tr>
-                    <td><label for="Fjöldi">Gums í brauði</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>3100</td>
-                    <td><label for="Fjöldi">Gums í brauði (háttum kóngsins)</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>3800</td>
-                </tr>
-                <tr>
-                    <td><label for="Fjöldi">Banani í tvennt</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>770</td>
-                    <td><label for="Fjöldi">Skófir á flatbrauði</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>500</td>
-                </tr>
-                <tr>
-                    <td><label for="Fjöldi">Glans súpa</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>1800</td>
-                    <td><label for="Fjöldi">Súpa mánaðarins</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>1700</td>
-                </tr>
-                <tr>
-                    <td><label for="Fjöldi">Fleytistangir</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>1200</td>
-                    <td><label for="Fjöldi">Úlfakjöts steik</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>2900</td>
-                </tr>
-                <tr>
-                    <td><label for="Fjöldi">Sleipt kjöt á priki</label><input type="number" id="fjöldi" name="fjöldi" min="0" max="10"></td> <td>2900</td>
-                </tr>
-            </table>
+        <br></br>
+        <label for="rettur 1">Réttur #1:</label> 
+        <select name="rettur 1" id="rettir">
+        <option value="ekkert valið" selected >Ekkert valið</option>
+        <option value="gums">Gums í brauði</option>
+        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
+        <option value="banani" >Banani í tvennt</option>
+        <option value="skófir">Skófir á flatbrauði</option>
+        <option value="súpa">Glans súpa</option>
+        <option value="súpa m">Súpa mánaðarins</option>
+        <option value="fleytis">Fleytistangir</option>
+        <option value="úlfakjöt">Úlfakjöts steik</option>
+        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
+        </select>
+        <br></br>
+
+        <label for="rettur 2">Réttur #2:</label> 
+        <select name="rettur 2" id="rettir">
+        <option value="ekkert valið" selected >Ekkert valið</option>
+        <option value="gums">Gums í brauði</option>
+        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
+        <option value="banani" >Banani í tvennt</option>
+        <option value="skófir">Skófir á flatbrauði</option>
+        <option value="súpa">Glans súpa</option>
+        <option value="súpa m">Súpa mánaðarins</option>
+        <option value="fleytis">Fleytistangir</option>
+        <option value="úlfakjöt">Úlfakjöts steik</option>
+        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
+        </select>
+        <br></br>
+
+        <label for="rettur 3">Réttur #3:</label> 
+        <select name="rettur 3" id="rettir">
+        <option value="ekkert valið" selected >Ekkert valið</option>
+        <option value="gums">Gums í brauði</option>
+        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
+        <option value="banani" >Banani í tvennt</option>
+        <option value="skófir">Skófir á flatbrauði</option>
+        <option value="súpa">Glans súpa</option>
+        <option value="súpa m">Súpa mánaðarins</option>
+        <option value="fleytis">Fleytistangir</option>
+        <option value="úlfakjöt">Úlfakjöts steik</option>
+        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
+        </select>
+        <br></br>
+
+        <label for="rettur 4">Réttur #4:</label> 
+        <select name="rettur 4" id="rettir">
+        <option value="ekkert valið" selected >Ekkert valið</option>
+        <option value="gums">Gums í brauði</option>
+        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
+        <option value="banani" >Banani í tvennt</option>
+        <option value="skófir">Skófir á flatbrauði</option>
+        <option value="súpa">Glans súpa</option>
+        <option value="súpa m">Súpa mánaðarins</option>
+        <option value="fleytis">Fleytistangir</option>
+        <option value="úlfakjöt">Úlfakjöts steik</option>
+        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
+        </select>
+        <br></br>
+
+        <label for="rettur 5">Réttur #5:</label> 
+        <select name="rettur 5" id="rettir">
+        <option value="ekkert valið" selected >Ekkert valið</option>
+        <option value="gums">Gums í brauði</option>
+        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
+        <option value="banani" >Banani í tvennt</option>
+        <option value="skófir">Skófir á flatbrauði</option>
+        <option value="súpa">Glans súpa</option>
+        <option value="súpa m">Súpa mánaðarins</option>
+        <option value="fleytis">Fleytistangir</option>
+        <option value="úlfakjöt">Úlfakjöts steik</option>
+        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
+        </select>
+        <br></br>
+        <p>Heimilisfang: <input type="text" placeholder="gervistræti4"></p>
+
+        
+
         </section>
     </div>
 
 
     <div>
-            <section class="pantboxes">
+        <section class="pantboxes">
         <h3><b>Þínar upplýsingar</b></h3>
-            <li>Nafn(nauðsynlegt)</li>
+            <p>Nafn(nauðsynlegt)</p>
             <input type="text" placeholder="Loremus Ipsumson" required>
-            <li>Netfang(nauðsynlegt)</li>
+            <p>Netfang(nauðsynlegt)</p>
             <input type="email" placeholder="gervigaur@gmail.com" required>
-            <li>Sími (nauðsynlegt)</li>
+            <p>Sími (nauðsynlegt)</p>
             <input type="tel" placeholder="+354 420 6969" required>
         </section>
         <section class="pantboxes">
@@ -77,9 +136,11 @@
             <label for="samþykki">Ég samþykki skilmála Gums og Glans</label>
             <input type="checkbox" id="samþykki" name="samþykki" required> </li>
             <input type = "submit" value="Panta" onclick="alert('Þú hefur pantað')"> </button> </li>
-            <input type="reset" value="Endursetja" >
+            
         </section>
-        </div>
+    </div>
+</div>
+
             <audio autoplay src="../audio/spidermanpizza.mp3">pizza time</audio>
     
 
