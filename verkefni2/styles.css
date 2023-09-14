@@ -48,13 +48,7 @@ body{
     padding-bottom: 1%;
 }
 
-footer{
-   color: #ffe7ae;
-    background-color: #2f0505;
-    border-top: 8px #ffe7ae solid;
-    text-align: center;
-    padding: 0.5%;
-}
+
 
 
 div{
@@ -133,4 +127,11 @@ div{
 
 
 
-
+footer{
+   color: #ffe7ae;
+    background-color: #2f0505;
+    border-top: 8px #ffe7ae solid;
+    text-align: center;
+    padding: 0.5%;
+    width: 100%;
+}
