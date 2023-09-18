@@ -39,6 +39,10 @@
  a {
    color: inherit;
  }
+
+ h3{
+   border-bottom:1px solid black;
+ }
  
  h2,
  h3,
@@ -119,12 +123,12 @@
  .boxes {
    margin-bottom: 2rem;
    padding-bottom: 1rem;
-   border-bottom: 2px solid #ffe7ae;
+   
  }
  
  .boxes .box {
-   display: inline-block;
- 
+   
+   background-color: #ffe7ae;
    margin-bottom: 1rem;
    margin-right: 1%;
    width: 48%;
@@ -168,7 +172,6 @@
  
  fieldset {
    margin-bottom: 1rem;
-   border: 1px solid #ffe7ae;
    padding: 1rem;
  }
  
@@ -198,4 +201,18 @@
  form button {
    padding: 0.25rem;
    border-radius: 6px;
+ }
+ fieldset .box{
+   border: 1px solid black;
+ }
+
+ .boxes{
+   display: flex;
+   flex-wrap: wrap;
+
+ }
+ .box{
+   flex-basis: 45%;
+   padding: 1rem;
+   border-radius: 25px;
  }
