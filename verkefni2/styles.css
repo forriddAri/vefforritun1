@@ -43,6 +43,7 @@
  h3{
    border-bottom:1px solid black;
  }
+
  
  h2,
  h3,
@@ -71,7 +72,7 @@
  nav {
    margin-bottom: 1rem;
    padding: 1rem;
- 
+   border-bottom: #ffe7ae solid 8px;
    background-color: #fff9ee;
    color: #2f0505;
  }
@@ -202,9 +203,6 @@
    padding: 0.25rem;
    border-radius: 6px;
  }
- fieldset .box{
-   border: 1px solid black;
- }
 
  .boxes{
    display: flex;
@@ -214,5 +212,34 @@
  .box{
    flex-basis: 45%;
    padding: 1rem;
+   border-radius: 1%;
+ }
+ fieldset .box{
+   border: 1px solid black;
    border-radius: 25px;
  }
+img{
+   width: 360px;
+   height: 450px;
+}
+
+fieldset button{
+   width: 100%;
+   border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: black solid;
+  border-right: black solid;
+}
+fieldset button:hover{
+   border-top: black solid;
+   border-left: black solid;
+   border-bottom: #ffe7ae solid;
+   border-right:  #ffe7ae solid;
+
+}
+
+
