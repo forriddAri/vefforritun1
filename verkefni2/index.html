@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html lang="is">
-    <head>
-        <meta charset="UTF-8">
-        <title>Forsíða</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-        
-    </head>
-    <body>
-        <h1><b>Gums og Glans</b></h1>
-        <p class="head"> Okkar markmið er að fylla alla svanga munna af gumsi og glans</p>
-        <p class="bhead"> 
-            <b>Forsíða</b> 
-            <u><a class="link" href = "sidur/um.html">  Um Veitingastaðinn</a></u>
-            <u><a class="link" href="sidur/matsedill.html"> Matseðill</a></u>
-            <u> <a class="link" href="sidur/pontun.html"> Pöntunarsíða</a></u>
-        </p>
-        
-        <div class="rammi">
-        <div>
-        <section  class="boxes" class="upper" >
-        <h3 class="opna"><b>Opnunartímar:</b></h3>
-        <p class="opna">Opið frá 04:00 - 20:00 alla virka daga .</p>
-        <p>og </p>
-        <p>06:00 - 21:00 um helgar</p>
-        </section>
-        <section class="boxes" class="upper">
-            <h3 class="um"><b>Um Okkur:</b></h3>
-            <p class="um">Við erum samansafn grallara og matgæðinga sem elska ekkert meira en gott gums!</p>
-            <p><a href = "sidur/um.html"> Allt um okkur </a> </a> </p>
-            </section>
-        
-        </div>
 
-        <div>
-        
-            <section class="boxes" class="upper">
-                <h3 class="matsedill"><b>Matseðill:</b></h3>
-                <p>Hér getið þið skoðað gumsið sem við bjóðum uppá!</p>
-                <p><a href = "sidur/matsedill.html"> Matseðill </a> </a> </p>
-                </section>
+<head>
+  <meta charset="utf-8">
+  <title>Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Forsíða Veitingastaðsins, veitingastaður með allar þær veitingar sem þig vantar.">
+  <meta property="og:title" content="Veitingastaðurinn">
+  <meta property="og:description" content="Velkomin á Veitingastaðinn!">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
 
-        <section class="boxes" class="upper">
-        <h3 class="panta"><b>Panta</b></h3>
-        <p>Þú getur sótt fengið heimsendingu eða borðað á staðnum!</p>
-        <p><a href = "sidur/pontun.html"> Panta </a> </a> </p>
-        </section>
-        </div>
+<body>
+  <header>
+    <h1>Gums og Glans</h1>
+    <p>Okkar markmið er að fylla alla svanga munna af gumsi og glans.</p>
+  </header>
+
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+  <nav>
+    <ul>
+      <li><strong>Forsíða</strong></li>
+      <li><a href="sidur/um.html">Um Veitingastaðinn</a></li>
+      <li><a href="sidur/matsedill.html">Matseðill</a></li>
+      <li><a href="sidur/pontun.html">Pöntunarsíða</a></li>
+    </ul>
+  </nav>
+
+  <main id="efni">
+    <div class="boxes">
+      <section class="box">
+        <h3>Opnunartími</h3>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>04:00 - 20:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>16:00 - 20:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>09:00–23:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </section>
+
+      <section class="box">
+        <h3>Um okkur</h3>
+        <p>Við erum samansafn grallara og matgæðinga sem elska ekkert meira en gott gums!</p>
+        <a href="./sidur/um.html">Lesa meira um okkur</a>
+      </section>
+
+      <section class="box">
+        <h3>Matseðill</h3>
+        <p>Hér getið þið skoðað gumsið sem við bjóðum uppá!</p>
+        <a href="./sidur/matsedill.html">Skoða matseðilinn</a>
+      </section>
+
+      <section class="box">
+        <h3>Panta</h3>
+        <p>Pantaðu borð eða mat heim til þín!</p>
+        <a href="./sidur/pontun.html">Senda inn pöntun</a>
+      </section>
     </div>
-    
 
-        <section>
+    <section class="popular">
+      <h2>Vinsælir réttir</h2>
 
-        <h2 class="le"><b>Vinsælir réttir:</b></h2>
-        <div>
-        <section>
-        <h3 class="lboxes"> Gums í brauði:</p>
-            <p>Gums matreitt utanhús mylli tveggja rjúkandi heitra brauðsneiða</p>
-            <p>3100kr<a href="sidur/pontun.html"> Panta! </a></p>
-        </section>
+      <ul class="boxes">
+        <li class="box">
+          <h3>Gums í brauði:</h3>
+          <p>Gums matreitt utanhús mylli tveggja rjúkandi</p>
+          <p>3.100kr kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Súpa mánaðarins(alltaf Glans súpa):</h3>
+          <p>Í bili bjóðum við bara upp á Glans súpu</p>
+          <p>1.700kr kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Gums í brauði (háttum kóngsins):</h3>
+          <p>Rjúkandi heit brauðsneið á kafi í gumsi matreitt annarstaðar</p>
+          <p>3.800 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Sleipt kjöt á priki:</h3>
+          <p>Úlfakjöt matreitt í nánd við Glans súpu</p>
+          <p>2.900 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+      </ul>
+      <p><a href="./sidur/matsedill.html">Skoða matseðil</a> eða <a href="./sidur/panta.html">panta</a>.</p>
+    </section>
+  </main>
 
-        <section>
-        <h3 class="lboxes">Gums í brauði (háttum kóngsins):</p>
-            <p>Rjúkandi heit brauðsneið á kafi í gumsi matreitt annarstaðar</p>
-            <p>3800kr<a href="sidur/pontun.html"> Panta! </a></p>
-        </section>
-        </div>
+  <footer>
+    <section>
+      <h2>Opnunartími</h2>
+      <dl>
+        <dt>Mánudaga til fimmtudaga</dt>
+        <dd>04:00 - 20:00</dd>
+        <dt>Föstudaga</dt>
+        <dd>16:00 - 20:00</dd>
+        <dt>Laugardaga</dt>
+        <dd>09:00–23:00</dd>
+        <dt>Sunnudaga</dt>
+        <dd>Lokað</dd>
+      </dl>
+    </section>
 
-        <div>
-        <section>   
-        <h3 class="lboxes">Súpa mánaðarins(alltaf Glans súpa):</p>
-            <p>Í bili bjóðum við bara upp á Glans súpu</p>
-            <p>1700kr <a href="sidur/pontun.html"> Panta! </a></p>
-        </section>
+    <section>
+      <h2>Hér erum við</h2>
+      <ul>
+        <li>Gums og Glans</li>
+        <li>Gervigata 13</li>
+        <li>221 Hafnarfjörður</li>
+        <li><a href="tel:3334567">Sími 666-7772</a></li>
+        <li>
+          <a href="mailto:veitingastadur@example.org">gog@nammi.is</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
 
-        <section>
-        <h3 class="lboxes">Sleipt kjöt á priki:</p>
-            <p>Úlfakjöt matreitt í nánd við Glans súpu</p>
-            <p>2900kr<a href="sidur/pontun.html"> Panta! </a></p>
-        </section>
-        </div>
-        </section>
-
-        <h3 class="le"><a href="sidur/matsedill.html"> skoða matseðil</a> eða <a href="sidur/pontun.html">panta</a></h3>
-        <p> <a href="../index.html"> til baka </a></p>
-        <audio autoplay src="audio/spidermanpizza.mp3">pizza time</audio>            
-    </body>
-    <footer>
-        <div>
-        <section class="boxes">
-            <h1>Opnunnartími:</h1>
-            <p>Virkir dagar:</p>
-            <p>04:00 - 20:00</p>
-            <p>helgar:</p>
-            <p>06:00 - 21:00</p>
-        </section>
-        <section class="boxes">
-            <h1>Finna okkur:</h1>
-            <p>Gums og Glans</p>
-            <p>Gervigötu 13</p>
-            <p>221 Hafnarfjörður</p>
-            <p>sími: 666-7772</p>
-
-        </section>
-    </div>
-    </footer>
 </html>

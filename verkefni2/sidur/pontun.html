@@ -1,158 +1,158 @@
 <!DOCTYPE html>
 <html lang="is">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pant...að vera fyrstur</title>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-        
-    </head>
-    
-    <body>
-        <h1><u><b>Panta</b></u></h1>
-        <p class="head">Skemmtilegast er að mæta og borða en hægt er að sækja eða fá heimsent.</p>
-        <p class="bhead"> 
-            <u><a class="link" href="../index.html"> Forsíða </a></u> 
-            <u><a class="link" href = "um.html">  Um Veitingastaðinn</a></u>
-            <u><a class="link" href="matsedill.html"> Matseðill</a></u>
-            <b>Pöntunarsíða</b>
-        </p>
-        <h2><b><u>Pöntun</u></b></h2>
-    
-        <div class="rammi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pantanir | Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:title" content="Veitingastaðurinn">
+  <meta property="og:description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
+
+<body>
+  <header>
+    <h1>Pantanir</h1>
+    <p>
+      Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+      þú sækir.
+    </p>
+  </header>
+
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Forsíða</a></li>
+      <li><a href="./um.html">Um Veitingastaðinn</a></li>
+      <li><a href="./matsedill.html">Matseðill</a></li>
+      <li><strong>Pöntunarsíða</strong></li>
+    </ul>
+  </nav>
+
+  <main id="efni">
+    <form method="post" action="." class="boxes">
+      <fieldset class="box">
+        <legend>Panta borð</legend>
         <div>
-        <section class="pantboxes">
-            <h3><b>Panta borð</b></h3>
-            <label for="date">Velja tíma</label>
-            <p><input type="date" id="date" name="date"></p>
-            <p><input type="time" id="time" name="time"></p>
-            <p>Fjöldi?</p>
-            <label for="Fjöldi"> </label>
-            <input type="number" id="fjöldi" name="fjöldi" min="1" max="10">
-            <p>Eithvað sem við ættum að vita?</>
-            <label for="auka"> Auka upplýsingar(t.d. ofnæmi):</label>
-            <p><input type="text" name="auka" id="auka"></p>
-        </section>
-            
-        <section class="pantboxes">
-        <h3><b>Panta mat</b></h3>
-        <br></br>
-        <label for="rettur 1">Réttur #1:</label> 
-        <select name="rettur 1" id="rettir">
-        <option value="ekkert valið" selected >Ekkert valið</option>
-        <option value="gums">Gums í brauði</option>
-        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
-        <option value="banani" >Banani í tvennt</option>
-        <option value="skófir">Skófir á flatbrauði</option>
-        <option value="súpa">Glans súpa</option>
-        <option value="súpa m">Súpa mánaðarins</option>
-        <option value="fleytis">Fleytistangir</option>
-        <option value="úlfakjöt">Úlfakjöts steik</option>
-        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
-        </select>
-        <br></br>
-
-        <label for="rettur 2">Réttur #2:</label> 
-        <select name="rettur 2" id="rettir">
-        <option value="ekkert valið" selected >Ekkert valið</option>
-        <option value="gums">Gums í brauði</option>
-        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
-        <option value="banani" >Banani í tvennt</option>
-        <option value="skófir">Skófir á flatbrauði</option>
-        <option value="súpa">Glans súpa</option>
-        <option value="súpa m">Súpa mánaðarins</option>
-        <option value="fleytis">Fleytistangir</option>
-        <option value="úlfakjöt">Úlfakjöts steik</option>
-        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
-        </select>
-        <br></br>
-
-        <label for="rettur 3">Réttur #3:</label> 
-        <select name="rettur 3" id="rettir">
-        <option value="ekkert valið" selected >Ekkert valið</option>
-        <option value="gums">Gums í brauði</option>
-        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
-        <option value="banani" >Banani í tvennt</option>
-        <option value="skófir">Skófir á flatbrauði</option>
-        <option value="súpa">Glans súpa</option>
-        <option value="súpa m">Súpa mánaðarins</option>
-        <option value="fleytis">Fleytistangir</option>
-        <option value="úlfakjöt">Úlfakjöts steik</option>
-        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
-        </select>
-        <br></br>
-
-        <label for="rettur 4">Réttur #4:</label> 
-        <select name="rettur 4" id="rettir">
-        <option value="ekkert valið" selected >Ekkert valið</option>
-        <option value="gums">Gums í brauði</option>
-        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
-        <option value="banani" >Banani í tvennt</option>
-        <option value="skófir">Skófir á flatbrauði</option>
-        <option value="súpa">Glans súpa</option>
-        <option value="súpa m">Súpa mánaðarins</option>
-        <option value="fleytis">Fleytistangir</option>
-        <option value="úlfakjöt">Úlfakjöts steik</option>
-        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
-        </select>
-        <br></br>
-
-        <label for="rettur 5">Réttur #5:</label> 
-        <select name="rettur 5" id="rettir">
-        <option value="ekkert valið" selected >Ekkert valið</option>
-        <option value="gums">Gums í brauði</option>
-        <option value="gums hk">Gums í brauði(háttum kóngssins)</option>
-        <option value="banani" >Banani í tvennt</option>
-        <option value="skófir">Skófir á flatbrauði</option>
-        <option value="súpa">Glans súpa</option>
-        <option value="súpa m">Súpa mánaðarins</option>
-        <option value="fleytis">Fleytistangir</option>
-        <option value="úlfakjöt">Úlfakjöts steik</option>
-        <option value="sleiptkjöt">Sleipt kjöt á priki</option>
-        </select>
-        <br></br>
-        <p>Heimilisfang: <input type="text" placeholder="gervistræti4"></p>
-
-        
-
-        </section>
-    </div>
-
-
-    <div>
-        <section class="pantboxes">
-        <h3><b>Þínar upplýsingar</b></h3>
-            <p>Nafn(nauðsynlegt)</p>
-            <input type="text" placeholder="Loremus Ipsumson" required>
-            <p>Netfang(nauðsynlegt)</p>
-            <input type="email" placeholder="gervigaur@gmail.com" required>
-            <p>Sími (nauðsynlegt)</p>
-            <input type="tel" placeholder="+354 420 6969" required>
-        </section>
-        <section class="pantboxes">
-        <h3><b>Samþykkja og panta</b></h3>
-       
-            <label for="samþykki">Ég samþykki skilmála Gums og Glans</label>
-            <input type="checkbox" id="samþykki" name="samþykki" required> </li>
-            <input type = "submit" value="Panta" onclick="alert('Þú hefur pantað')"> </button> </li>
-        
-        </section>
+          <label for="when">Hvenær viltu koma?</label>
+          <input type="datetime-local" id="when" name="when">
         </div>
+        <div>
+          <label for="size">Hve mörg?</label>
+          <select id="size">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
         </div>
-            <audio autoplay src="../audio/spidermanpizza.mp3">pizza time</audio>
-    
-    </body>
+        <div>
+          <label for="special">Viltu taka eitthvað fram?</label>
+          <textarea id="special"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="box">
+        <legend>Panta mat</legend>
+        <div>
+          <label for="food1">Réttur #1</label>
+          <input id="food1" list="foods">
+        </div>
+        <div>
+          <label for="food2">Réttur #2</label>
+          <input id="food2" list="foods">
+        </div>
+        <div>
+          <label for="food3">Réttur #3</label>
+          <input id="food3" list="foods">
+        </div>
+        <div>
+          <label for="food4">Réttur #4</label>
+          <input id="food4" list="foods">
+        </div>
+        <div>
+          <label for="food5">Réttur #5</label>
+          <input id="food5" list="foods">
+        </div>
+        <div>
+          <label for="address">Heimilisfang</label>
+          <input type="text" id="address">
+        </div>
+      </fieldset>
 
-    <footer>
-        <h2><u><b>Opnunnartími</b></u></h2> 
-        <p>Opið frá 04:00 - 20:00 alla virka daga og 06:00 - 21:00 um helgar.</p>
-        <h2><u><b>Staðsetning</b></u></h2>
-        <p>Gums og Glans á Gervigötu 13 221 Hafnarfjörður, Sími 666-7772, <a href="gumsogglans@hotmail.com"> gumsogglans@hotmail.com</a> </p>
+      <fieldset class="box">
+        <legend>Þínar upplýsingar</legend>
+        <div>
+          <label for="name">Nafn</label>
+          <input id="name" type="text" required placeholder="Loremus Ipsumson">
+        </div>
+        <div>
+          <label for="email">Netfang</label>
+          <input id="email" name="email" type="email" required placeholder="gervill@hotmail.tv">
+        </div>
+        <div>
+          <label for="phone">Sími</label>
+          <input id="phone" type="tel" required placeholder=" 123 - 4567">
+        </div>
+      </fieldset>
+      <fieldset class="box">
+        <legend>Samþykkja og panta</legend>
+        <div>
+          <label>
+            <input type="checkbox" name="terms">Ég samþykki skilmála
+            Veitingastaðsins</label>
+        </div>
+        <button>Panta</button>
+      </fieldset>
+      <datalist id="foods">
+        <option>Gums í brauði</option>
+        <option>Gums í brauði (háttum kóngsins)</option>
+        <option>Banani í tvennt</option>
+        <option>Skófir í flatbrauði</option>
+        <option>Glans súpa</option>
+        <option>Súpa mánaðarins</option>
+        <option>Fleytistangir</option>
+        <option>Úlfakjötssteik</option>
+        <option>Sleipt kjöt á priki</option>
+      </datalist>
+    </form>
+    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+  </main>
 
-        <p> <a href="../index.html"> til baka </a></p>
-        <p> <a href="matsedill.html"> Matseðill</a></p>
-        <p> <a href="um.html"> um Gums og Glans </a></p>
-    </footer>
+  <footer>
+    <h2>Opnunartími</h2>
+    <dl>
+      <dt>Mánudaga til fimmtudaga</dt>
+      <dd>09:00–18:00</dd>
+      <dt>Föstudaga</dt>
+      <dd>10:00–22:00</dd>
+      <dt>Laugardaga</dt>
+      <dd>11:00–22:00</dd>
+      <dt>Sunnudaga</dt>
+      <dd>Lokað</dd>
+    </dl>
+
+    <h2>Hér erum við</h2>
+    <ul>
+      <li>Veitingastaðurinn ehf.</li>
+      <li>Aðalgata 10</li>
+      <li>100 Reykjavík</li>
+      <li><a href="tel:3334567">Sími 333-4567</a></li>
+      <li>
+        <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

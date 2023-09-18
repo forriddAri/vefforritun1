@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="is">
-    <head>
-        <meta charset="UTF-8">
-        <title>Um Veitingastaðinn</title>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-        
-    </head>
-    <style>
-        table,th,td{
-            border: slateblue;
-        }
 
-    </style>
+<head>
+  <meta charset="utf-8">
+  <title>Matseðill | Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:title" content="Veitingastaðurinn">
+  <meta property="og:description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
 
-    <body>
-        <h1>Matseðill:</h1>
-        <p class="head"> Allt okkur gúmmelaði</p>
-        <p class="bhead"> 
-            <u><a class="link" href="../index.html"> Forsíða </a></u> 
-            <u><a class="link" href = "um.html">  Um Veitingastaðinn</a></u>
-            <b>Matseðill</b>
-            <u> <a class="link" href="pontun.html"> Pöntunarsíða</a></u>
-        </p>
-        
-        <section class="lboxes">
-        <table style="width: 100%;">
+<body>
+  <header>
+    <h1>Matseðill</h1>
+    <p>Allt okkur gúmmelaði!</p>
+  </header>
+
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Forsíða</a></li>
+      <li><a href="./um.html">Um Veitingastaðinn</a></li>
+      <li><strong>Matseðill</strong></li>
+      <li><a href="./pontun.html">Pöntunarsíða</a></li>
+    </ul>
+  </nav>
+
+  <main id="efni">
+    <table>
+      <thead>
         <tr>
-            <th>Nr.</th>
-            <th>Nafn réttar</th>
-            <th>Lýsing</th>
-            <th>verð</th>
+          <th>Nr.</th>
+          <th>Heiti</th>
+          <th>Lýsing</th>
+          <th>Verð</th>
         </tr>
-        <tr class="od">
-            <td>1</td>
-            <td>Gums í brauði</td>
-            <td>Gums matreitt utanhús mylli tveggja rjúkandi heitra brauðsneiða</td>
-            <td>3100</td>
-        </tr>
-        <tr >
-            <td>2</td>
-            <td>Gums í brauði (háttum kóngsins)</td>
-            <td>Rjúkandi heit brauðsneið á kafi í gumsi matreitt annarstaðar</td>
-            <td>3800</td>
-        </tr>
-        <tr class="od">
-            <td>3</td>
-            <td>Banani í tvennt</td>
-            <td>Frábrugðið hefðbundnu bananasplitti</td>
-            <td>770</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Gums í brauði</td>
+          <td>	Gums matreitt utanhús mylli tveggja rjúkandi heitra brauðsneiða</td>
+          <td>3.100 kr.-</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>Skófir á flatbrauði</td>
-            <td>Öll hráefni fundin innanhús</td>
-            <td>500</td>
-        </tr>
-        <tr class="od">
-            <td>5</td>
-            <td>Glans súpa</td>
-            <td>Sjóðandi heit súpa með ýmsum hráefnum</td>
-            <td>1800</td>
+          <td>2</td>
+          <td>Gums í brauði(háttum kóngsins)</td>
+          <td>Rjúkandi heit brauðsneið á kafi í gumsi matreitt annarstaðar</td>
+          <td>3.800 kr.-</td>
         </tr>
         <tr>
-            <td>6</td>
-            <td>Súpa mánaðarins</td>
-            <td>Í bili bjóðum við bara upp á Glans súpu</td>
-            <td>1700</td>
-        </tr>
-        <tr class="od">
-            <td>7</td>
-            <td>Fleytistangir</td>
-            <td>Djúpsteiktar upp úr afgangs Glans súpu</td>
-            <td>1200</td>
+          <td>3</td>
+          <td>Banani í tvennt</td>
+          <td>
+            Frábrugðið hefðbundnu bananasplitti
+          </td>
+          <td>770 kr.-</td>
         </tr>
         <tr>
-            <td>8</td>
-            <td>Úlfakjöts steik</td>
-            <td>Hágæða úlfakjöt borið fram með salati til hliðar</td>
-            <td>2900</td>
+          <td>4</td>
+          <td>Skógir á flatbrauði</td>
+          <td>Öll hráefni fundin innanhús</td>
+          <td>500 kr.-</td>
         </tr>
-        <tr class="od">
-            <td>9</td>
-            <td>Sleipt kjöt á priki</td>
-            <td>Úlfakjöt matreitt í nánd við Glans súpu</td>
-            <td>2900</td>
+        <tr>
+          <td>5</td>
+          <td>Glans súpa</td>
+          <td>Sjóðandi heit súpa með ýmsum hráefnum</td>
+          <td>1.800 kr.-</td>
         </tr>
-        </table>
-    </section>
-        <p class="mlink"><a href="../index.html"> aftur á forsíðu.</a></p>
-        <audio autuplay src="../audio/spidermanpizza.mp3">pizza time</audio>
+        <tr>
+          <td>6</td>
+          <td>Súpa mánaðarins</td>
+          <td>Í bili bjóðum við bara upp á Glans súpu</td>
+          <td>1.700 kr.-</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Fleytistangir</td>
+          <td>Djúpsteiktar úr Glans súpu</td>
+          <td>1.200 kr.-</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Úlfakjötssteik</td>
+          <td>Hágæða úlfakjöt borið fram með salati til hliðar</td>
+          <td>2.900 kr.-</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Sleipt kjöt á priki</td>
+          <td>Úlfakjöt matreitt í nánd við Glans súpu</td>
+          <td>2.900 kr.-</td>
+        </tr>
+      </tbody>
+    </table>
 
-        
-    </body>
-    <footer>
-        <h2><u><b>Opnunnartími</b></u></h2>
-        <p>Opið frá 04:00 - 20:00 alla virka daga og 06:00 - 21:00 um helgar.</p>
-        <h2><u><b>Staðsetning</b></u></h2>
-        <p>Gums og Glans á Gervigötu 13 221 Hafnarfjörður, Sími 666-7772, <a href="gumsogglans@hotmail.com"></a> </p>
+    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+  </main>
 
-        <p> <a href="../index.html"> til baka </a></p>
-        <p> <a href="pontun.html"> Panta</a></p>
-        <p> <a href="um.html"> um Gums og Glans </a></p>
-      
-    </footer>
+  <footer>
+    <h2>Opnunartími</h2>
+    <dl>
+      <dt>Mánudaga til fimmtudaga</dt>
+      <dd>09:00–18:00</dd>
+      <dt>Föstudaga</dt>
+      <dd>10:00–22:00</dd>
+      <dt>Laugardaga</dt>
+      <dd>11:00–22:00</dd>
+      <dt>Sunnudaga</dt>
+      <dd>Lokað</dd>
+    </dl>
+
+    <h2>Hér erum við</h2>
+    <ul>
+      <li>Veitingastaðurinn ehf.</li>
+      <li>Aðalgata 10</li>
+      <li>100 Reykjavík</li>
+      <li><a href="tel:3334567">Sími 333-4567</a></li>
+      <li>
+        <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

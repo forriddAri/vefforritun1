@@ -1,14 +1,9 @@
-
- *{
-    margin: 0%;
-    padding: 0%;
-    font-family:'Lora', serif;;
-    
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+   margin: 0;
+   padding: 0;
  }
-body{
-   text-align: center;
-   
-}
+ 
  /* Reiknum stærð á öllum boxum sem border-box */
  html {
    box-sizing: border-box;
@@ -19,119 +14,188 @@ body{
  *:after {
    box-sizing: inherit;
  }
-
- a.link{
-   color: #2f0505;
-   padding: 1%;
+ 
+ /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+ .sr-only:not(:focus):not(:active) {
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
  }
-
- h1{
-    color: #ffe7ae;
-    background-color: #2f0505;
-    text-align: center;
-    padding: 0.5%;
+ 
+ /*** Almennt ***/
+ 
+ html,
+ input,
+ select,
+ button {
+   font-size: 16px;
+   font-family: 'Lora', serif;
  }
-
- .head{
-    color: #ffe7ae;
-    background-color: #2f0505;
-    border-bottom: 8px #ffe7ae solid;
-    text-align: center;
-    padding: 0.5%;
+ 
+ a {
+   color: inherit;
  }
-
-.bhead{
-    text-align: center;
-    color: #2f0505;
-    background-color: #fff9ee;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-
-
-
-div{
-   display: inline-block;
-}
-
-.rammi{
-   max-width: 1000px;
-}
-
-
-.boxes{
-   display: inline-block;
+ 
+ h2,
+ h3,
+ section {
+   margin-bottom: 1rem;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ /*** Haus ***/
+ 
+ body > header {
+   padding: 1rem;
+   border-bottom: 8px solid #ffe7ae;
+ 
+   background-color: #2f0505;
+   color: #fff1cf;
+ 
    text-align: center;
-   margin: 1rem;
+ }
+ 
+ /*** Valmynd ***/
+ 
+ nav {
+   margin-bottom: 1rem;
    padding: 1rem;
-   width:40%;
-   height: 100%;
-   vertical-align: top;
-}
-
-.lboxes{
+ 
+   background-color: #fff9ee;
+   color: #2f0505;
+ }
+ 
+ nav ul {
+   list-style: none;
+   text-align: center;
+ }
+ 
+ nav ul li {
    display: inline-block;
-   text-align: left;
-   margin: 1rem;
+   margin-right: 1rem;
+ }
+ 
+ /*** Meginmál ***/
+ 
+ main {
+   margin: 0 auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   max-width: 900px;
+ }
+ 
+ /*** Fótur ***/
+ 
+ footer {
+   margin-top: 1rem;
    padding: 1rem;
-   width: 70%;
-   vertical-align: top;
-}
-
-.pboxesr{
+   border-top: 8px solid #ffe7ae;
+ 
+   background-color: #2f0505;
+   color: #fff1cf;
+ 
+   text-align: center;
+ }
+ 
+ footer > section {
    display: inline-block;
-   padding: 1rem;
-   width: 49%;
    vertical-align: top;
-   text-align: right;
-}
-
-.pboxesl{
-   display: inline-block;
-   padding: 1rem;
-   width: 49%;
-   vertical-align: top;
-   text-align: left;
-}
-
-.pantboxes{
-   display: inline-block;
-   text-align: left;
-   margin: 1rem;
-   padding: 1rem;
-   width: 40%;
-   vertical-align: top;
-   border: 2px #ffe7ae solid;
-}
-
-.story{
-   text-align: center;   
-}
-
-   
-.le{
-   border-top: #ffe7ae solid;
-   padding-right: 23rem;
+ }
+ 
+ footer ul {
+   list-style: none;
+   text-align: center;
+ }
+ 
+ /*** Box! ***/
+ 
+ .boxes {
+   margin-bottom: 2rem;
    padding-bottom: 1rem;
-   padding-top: 1rem;
-}
-.mlink{
-   padding-right: 30rem;
-   padding-bottom: 1rem;
-}
-
-.od{
+   border-bottom: 2px solid #ffe7ae;
+ }
+ 
+ .boxes .box {
+   display: inline-block;
+ 
+   margin-bottom: 1rem;
+   margin-right: 1%;
+   width: 48%;
+ 
+   vertical-align: top;
+ }
+ 
+ .boxes .box a {
+   display: block;
+   margin-top: 1rem;
+   font-weight: bold;
+ }
+ 
+ /*** Opnunartími ***/
+ 
+ dt {
+   font-weight: bold;
+ }
+ 
+ dd {
+   margin-bottom: 1rem;
+ }
+ 
+ /*** Matseðill ***/
+ 
+ table {
+   margin-bottom: 1rem;
+   border-spacing: 0;
+ }
+ 
+ table th,
+ table td {
+   padding: 0.5rem;
+ }
+ 
+ table tbody tr:nth-child(2n + 1) {
    background-color: #ffe7ae;
-}
-
-
-
-footer{
-   color: #ffe7ae;
-    background-color: #2f0505;
-    border-top: 8px #ffe7ae solid;
-    text-align: center;
-    padding: 0.5%;
-    width: 100%;
-}
+ }
+ 
+ /*** Pöntunarform ***/
+ 
+ fieldset {
+   margin-bottom: 1rem;
+   border: 1px solid #ffe7ae;
+   padding: 1rem;
+ }
+ 
+ fieldset legend {
+   font-weight: bold;
+ }
+ 
+ fieldset div {
+   margin-bottom: 1rem;
+ }
+ 
+ fieldset div label {
+   display: block;
+ }
+ 
+ fieldset input,
+ fieldset select,
+ fieldset textarea {
+   padding: 0.5rem;
+ }
+ 
+ fieldset input[type='checkbox'] {
+   display: inline-block;
+   margin-right: 0.5rem;
+ }
+ 
+ form button {
+   padding: 0.25rem;
+   border-radius: 6px;
+ }
