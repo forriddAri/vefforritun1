@@ -54,7 +54,9 @@
  img {
    max-width: 100%;
  }
- 
+ .right{
+   text-align: right;
+ }
  /*** Haus ***/
  
  body > header {
