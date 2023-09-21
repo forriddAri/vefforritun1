@@ -84,7 +84,7 @@
  }
  
  nav ul li {
-   display: inline-block;
+   display: inline flex;
    margin-right: 1rem;
  }
  
@@ -211,6 +211,8 @@
 
  }
  .box{
+   display: flex;
+   flex-direction: column;
    flex-basis: 45%;
    padding: 1rem;
    border-radius: 1%;
@@ -220,8 +222,10 @@
    border-radius: 25px;
  }
 img{
-   width: 360px;
-   height: 450px;
+   width: 100%;
+   aspect-ratio: 1;
+   object-fit: cover;
+   object-position: top;
 }
 
 fieldset button{
@@ -240,7 +244,11 @@ fieldset button:hover{
    border-left: black solid;
    border-bottom: #ffe7ae solid;
    border-right:  #ffe7ae solid;
+   cursor: pointer;
 
 }
 
+.box p{
+  flex-grow: 1;
+}
 
