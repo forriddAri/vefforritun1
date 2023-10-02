@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Matseðill | Gums og Glans</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <title>Matseðill | Veitingastaðurinn</title>
+  <meta name=""viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../grid.css">
   <meta name="description" content="Um Veitingastaðinn, saga og starfsfólk.">
   <meta property="og:title" content="Veitingastaðurinn">
   <meta property="og:description" content="Um Veitingastaðinn, saga og starfsfólk.">
@@ -15,123 +14,131 @@
 </head>
 
 <body>
-  <header>
-    <h1>Matseðill</h1>
-    <p>Allt okkur gúmmelaði!</p>
-  </header>
+  <div class="wrapper">
+    <div class="header">
+      <header>
+        <h1>Matseðill</h1>
+        <p>Skoðaðu það sem við höfum upp á að bjóða!</p>
+      </header>
 
-  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
-  <nav>
-    <ul>
-      <li><a href="../index.html">Forsíða</a></li>
-      <li><a href="./um.html">Um Veitingastaðinn</a></li>
-      <li><strong>Matseðill</strong></li>
-      <li><a href="./pontun.html">Pöntunarsíða</a></li>
-    </ul>
-  </nav>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><a href="./um.html">Um Veitingastaðinn</a></li>
+          <li><strong>Matseðill</strong></li>
+          <li><a href="./pontun.html">Pöntunarsíða</a></li>
+        </ul>
+      </nav>
 
-  <main id="efni">
-    <table>
-      <thead>
-        <tr>
-          <th>Nr.</th>
-          <th>Heiti</th>
-          <th>Lýsing</th>
-          <th>Verð</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Gums í brauði</td>
-          <td>Gums matreitt utanhús mylli tveggja rjúkandi heitra brauðsneiða</td>
-          <td>3.100 kr.-</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Gums í brauði(háttum kóngsins)</td>
-          <td>Rjúkandi heit brauðsneið á kafi í gumsi matreitt annarstaðar</td>
-          <td>3.800 kr.-</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Banani í tvennt</td>
-          <td>
-            Frábrugðið hefðbundnu bananasplitti
-          </td>
-          <td>770 kr.-</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Skógir á flatbrauði</td>
-          <td>Öll hráefni fundin innanhús</td>
-          <td>500 kr.-</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Glans súpa</td>
-          <td>Sjóðandi heit súpa með ýmsum hráefnum</td>
-          <td>1.800 kr.-</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Súpa mánaðarins</td>
-          <td>Í bili bjóðum við bara upp á Glans súpu</td>
-          <td>1.700 kr.-</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Fleytistangir</td>
-          <td>Djúpsteiktar úr Glans súpu</td>
-          <td>1.200 kr.-</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>Úlfakjötssteik</td>
-          <td>Hágæða úlfakjöt borið fram með salati til hliðar</td>
-          <td>2.900 kr.-</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>Sleipt kjöt á priki</td>
-          <td>Úlfakjöt matreitt í nánd við Glans súpu</td>
-          <td>2.900 kr.-</td>
-        </tr>
-      </tbody>
-    </table>
+    </div>
+    <main class="main" id="efni">
+      <table>
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Heiti</th>
+            <th>Lýsing</th>
+            <th>Verð</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Lasagna</td>
+            <td>Lasagna með fersku salati</td>
+            <td>2.500 kr.-</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sveppa risotto</td>
+            <td>Kremkennt risotto með sveppum og fersku grænmeti</td>
+            <td>2.500 kr.-</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ferskt pasta með pestó</td>
+            <td>
+              Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum
+            </td>
+            <td>2.300 kr.-</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Quesadilla</td>
+            <td>Quesadilla með osti og fersku salsa</td>
+            <td>2.100 kr.-</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Falafel með hummus</td>
+            <td>Falafel með hummus, pitu og fersku salati</td>
+            <td>2.000 kr.-</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Súpa dagsins</td>
+            <td>Daglega ný súpa</td>
+            <td>1.850 kr.-</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Kryddaðar sætkartöflur</td>
+            <td>Kryddaðar sætkartöflur með vorlauk</td>
+            <td>1.100 kr.-</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Hamborgari</td>
+            <td>Hamborgari með frönskum kartöflum</td>
+            <td>2.500 kr.-</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Pizza</td>
+            <td>Klassísk pizza</td>
+            <td>2.000 kr.-</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
-  </main>
+      <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+    </main>
 
-  <footer>
-    <section class="box">
-      <h2>Opnunartími</h2>
-      <dl>
-        <dt>Mánudaga til fimmtudaga</dt>
-        <dd>04:00 - 20:00</dd>
-        <dt>Föstudaga</dt>
-        <dd>16:00 - 20:00</dd>
-        <dt>Laugardaga</dt>
-        <dd>09:00–23:00</dd>
-        <dt>Sunnudaga</dt>
-        <dd>Lokað</dd>
-      </dl>
-    </section>
+    <footer class="footer">
+      <div class="foot foot-1 offset-1">
+      <section>
+        <h2>Opnunartími</h2>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00–18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00–22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00–22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </section>
+    </div>
 
-    <section class="box">
-      <h2>Hér erum við</h2>
-      <ul>
-        <li>Gums og Glans</li>
-        <li>Gervigata 13</li>
-        <li>221 Hafnarfjörður</li>
-        <li><a href="tel:3334567">Sími 666-7772</a></li>
-        <li>
-          <a href="mailto:veitingastadur@example.org">gog@nammi.is</a>
-        </li>
-      </ul>
-    </section>
-  </footer>
+    <div class="foot foot-2 offset-2">
+      <section>
+        <h2>Hér erum við</h2>
+        <ul>
+          <li>Veitingastaðurinn ehf.</li>
+          <li>Aðalgata 10</li>
+          <li>100 Reykjavík</li>
+          <li><a href="tel:3334567">Sími 333-4567</a></li>
+          <li>
+            <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+          </li>
+        </ul>
+      </section>
+     </div>
+    </footer>
+  </div>
 </body>
 
 </html>

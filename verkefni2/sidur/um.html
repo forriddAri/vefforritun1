@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Um | Gums og Glans</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <title>Um | Veitingastaðurinn</title>
+  <meta name=""viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../grid.css">
   <meta name="description" content="Um Veitingastaðinn, saga og starfsfólk.">
   <meta property="og:title" content="Veitingastaðurinn">
   <meta property="og:description" content="Um Veitingastaðinn, saga og starfsfólk.">
@@ -15,88 +14,107 @@
 </head>
 
 <body>
-  <header>
-    <h1>Um Veitingastaðinn</h1>
-    <p>Við erum búin að elda mat fyrir fólk síðan 2001.</p>
-  </header>
+  <div class="wrapper">
+    <div class="header">
+      <header>
+        <h1>Um Veitingastaðinn</h1>
+        <p>Við erum búin að elda mat fyrir fólk síðan 2001.</p>
+      </header>
 
-  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+      <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
-  <nav>
-    <ul>
-      <li><a href="../index.html">Forsíða</a></li>
-      <li><strong>Um Veitingastaðinn</strong></li>
-      <li><a href="./matsedill.html">Matseðill</a></li>
-      <li><a href="./pontun.html">Pöntunarsíða</a></li>
-    </ul>
-  </nav>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Forsíða</a></li>
+          <li><strong>Um Veitingastaðinn</strong></li>
+          <li><a href="./matsedill.html">Matseðill</a></li>
+          <li><a href="./pontun.html">Pöntunarsíða</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main" id="efni">
+      <section>
+        <h2>Sagan</h2>
+        <p>Við byrjuðum að elda árið 2001 og nam fringilla tellus a nisl scelerisque, ut varius nibh blandit. Donec
+          dignissim vehicula justo in aliquet. In rhoncus congue ipsum ut volutpat. Morbi vehicula leo vitae odio
+          viverra,
+          malesuada euismod libero porttitor. Donec metus purus, luctus nec tortor sed, accumsan fermentum libero. Morbi
+          vel lacus vel nisi molestie sollicitudin eget sed massa. Curabitur id faucibus nunc, ut blandit justo. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Cras ac purus ac elit vehicula pulvinar. Sed vel nunc
+          nulla.
 
-  <main id="efni">
-    <section>
-      <h2 class="box">Sagan</h2>
-      <p class="box">Eftir að flýja frá kúgandi ríkistjórn heimalands síns árið 1950. Ákváðu Gleiðhvíður Gums og konan hans Glansvín Glátrmans að reisa veitingastaðinn Gums og Glans í höfuð þeirra beggja.
-        Upprunalega átti G&G alltaf að halda upp á alla þá hluti sem yfirvöld fyrra heimalands þeirra reyndu að þagga niður í og útrýma úr samfélaginu.
-        Gums og Glans hefur notist mikilla vinsælda hér á landi og er ólíklegt að nokkurt mannsbarn hafi ekki smakkað "Gums í brauði" en það var uppskrift sem hefur verið í fjölskyldu Gleiðhvíðs í hundruð ára.
+        </p>
+      </section>
 
-      </p>
-    </section>
+      <section>
+        <h2>Starfsfólk</h2>
+        <ul class="boxes">
+          <li class="box">
+            <h3 class="title">Anna Jónsdóttir</h3>
+            <div class="content">
+              <img src="../myndir/anna.jpg" width="500" alt="">
+              <p>Eigandi</p>
+            </div>
+          </li>
+          <li class="box">
+            <h3 class="title">Adam Adamsson</h3>
+            <div class="content">
+              <img src="../myndir/adam.jpg" width="500" alt="">
+              <p>Rekstrarstjóri</p>
+            </div>
+          </li>
+          <li class="box">
+            <h3 class="title">Benni</h3>
+            <div class="content">
+              <img src="../myndir/benni.jpg" width="500" alt="">
+              <p>Kokkur</p>
+            </div>
+          </li>
+          <li class="box">
+            <h3 class="title">Birna</h3>
+            <div class="content">
+              <img src="../myndir/birna.jpg" width="500" alt="">
+              <p>Kokkur</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+    </main>
 
-    <section>
-      <h2 class="box">Starfsfólk</h2>
-      <ul class="boxes">
-        <list class="box">
-          <h3>Glansvín Glátrmans</h3>
-          <img src="../myndir/anna.jpg" width="500" alt="">
-          <p>Eigandi</p>
-        </list>
-        <list class="box">
-          <h3>Haffi Klikk</h3>
-          <img src="../myndir/adam.jpg" width="500" alt="">
-          <p>PLötusnúður</p>
-        </list>
-        <list class="box">
-          <h3>Gleiðhvíður Gums</h3>
-          <img src="../myndir/benni.jpg" width="500" alt="">
-          <p>Eigandi</p>
-        </list>
-        <list class="box">
-          <h3>Sparðlöf Jónína Jónsdóttir</h3>
-          <img src="../myndir/birna.jpg" width="500" alt="">
-          <p>Rekstrarstýra</p>
-        </list>
-      </ul>
-    </section>
-    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
-  </main>
+    <footer class="footer">
+      <div class="foot foot-1 offset-1">
+      <section>
+        <h2>Opnunartími</h2>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00–18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00–22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00–22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </section>
+    </div>
 
-  <footer>
-    <section class="box">
-      <h2>Opnunartími</h2>
-      <dl>
-        <dt>Mánudaga til fimmtudaga</dt>
-        <dd>04:00 - 20:00</dd>
-        <dt>Föstudaga</dt>
-        <dd>16:00 - 20:00</dd>
-        <dt>Laugardaga</dt>
-        <dd>09:00–23:00</dd>
-        <dt>Sunnudaga</dt>
-        <dd>Lokað</dd>
-      </dl>
-    </section>
-
-    <section class="box">
-      <h2>Hér erum við</h2>
-      <ul>
-        <li>Gums og Glans</li>
-        <li>Gervigata 13</li>
-        <li>221 Hafnarfjörður</li>
-        <li><a href="tel:3334567">Sími 666-7772</a></li>
-        <li>
-          <a href="mailto:veitingastadur@example.org">gog@nammi.is</a>
-        </li>
-      </ul>
-    </section>
-  </footer>
+    <div class="foot foot-2 offset-2">
+      <section>
+        <h2>Hér erum við</h2>
+        <ul>
+          <li>Veitingastaðurinn ehf.</li>
+          <li>Aðalgata 10</li>
+          <li>100 Reykjavík</li>
+          <li><a href="tel:3334567">Sími 333-4567</a></li>
+          <li>
+            <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+          </li>
+        </ul>
+      </section>
+     </div>
+    </footer>
+  </div>
 </body>
 
 </html>
