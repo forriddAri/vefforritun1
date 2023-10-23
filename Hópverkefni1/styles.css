@@ -1,0 +1,406 @@
+/* Reset og border-box á allt */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Leturgerðir */
+  
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/Lora-VariableFont_wght.ttf) format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-display: swap;
+    src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format('woff');
+  }
+  
+  /* Stillingar */
+  
+  :root {
+    /* Grunn bilið okkar er 1rem == 16px */
+    --font-base-body-px: 16px;
+    --spacing: 1rem;
+  
+    /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+    --vertical-space: calc(var(--gutter));
+  
+    /* Hámarksbreidd á efni */
+    --max-width: 1400px;
+    --width-offset: calc(100% - (2 * var(--offset)));
+  
+    /* Border breiddir */
+    --border-small: 1px;
+    --border-large: 8px;
+    --border-radius: 6px;
+  
+      /* Grid stillingar */
+      --columns: 12;
+      --gutter: 30px;
+      --offset: 20px;
+    
+  
+    /* Litir */
+    --color-gold: #ffe7ae;
+    --color-gold-light: #fff1cf;
+    --color-dark: #2f0505;
+    --color-light: #fff9ee;
+  
+    --color-primary: #f0f0f8;
+    --color-header: #fff;
+    --color-text: #000;
+    --color-border: #ccc;
+  
+    /* Letur stillingar */
+    --font-base-size: 1rem;
+    --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Lora', Georgia, serif;
+  
+     /* Transitions */
+     --transition-time-short: 300ms;
+     --transition-time-long: 600ms;
+     --transition-timing-function: ease-in-out;
+  }
+  
+  /* Almennt */
+  
+  html,
+  input,
+  select,
+  button {
+    font-size: var(--font-base-body-px);
+    font-family: var(--font-family-base);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    /* Setjum almennt bil á eftir fyrirsögnum */
+    margin-bottom: var(--spacing);
+  
+    font-family: var(--font-family-heading);
+  }
+  
+  a {
+    color: inherit;
+    background-color: inherit;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  /* Layout */
+  
+  .wrapper {
+    display: grid;
+    gap: var(--spacing);
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: var(--vertical-space);
+    min-height: 100vh;
+  }
+  
+  /** Haus **/
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+  
+    border-bottom: var(--border-large) solid var(--color-gold);
+  
+    background-color: var(--color-dark);
+    color: var(--color-gold-light);
+  }
+  
+  .header header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /** Valmynd **/
+  
+  .navigation {
+    padding: var(--spacing);
+    width: 100%;
+  
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+  
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+  
+    width: 100%;
+  
+    list-style: none;
+  }
+  
+  /** Meginmál **/
+  
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: var(--vertical-space);
+    margin: 0 auto;
+    width: var(--width-offset);
+    max-width: var(--max-width);
+  }
+  
+  /** Fótur **/
+  
+  .footer {
+    display: grid;
+    
+    /* justify-items: center; */
+  
+    padding: var(--vertical-space);
+    border-top: var(--border-large) solid var(--color-gold);
+  
+    background-color: var(--color-dark);
+    color: var(--color-gold-light);
+  
+    text-align: center;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  
+  /* Box! */
+  
+  .boxes {
+    display: grid;
+    grid-template-rows: auto;
+    /* grid-template-columns: 100%; */
+    gap: var(--vertical-space);
+    /* justify-items: center; */
+  
+    margin-bottom: calc(var(--spacing) * 2);
+    /* width: 100%; */
+  }
+  
+  .boxes .box {
+    display: flex;
+    flex-direction: column;
+  
+    gap: var(--spacing);
+  
+    padding: calc(var(--spacing) * 0.5);
+    min-height: 100px;
+    width: 100%;
+  
+    color: var(--color-dark);
+    background-color: var(--color-gold-light);
+    border-radius: 5px;
+  }
+  
+  .boxes .box .title {
+    margin-bottom: calc(var(--spacing) * 0.5);
+    border-bottom: var(--border-small) solid var(--color-dark);
+  }
+  
+  .boxes .box .content {
+    flex: 1;
+  }
+  
+  .boxes .box img {
+  
+    max-height: 400px;
+  
+    object-fit: cover;
+    object-position: top center;
+  }
+  
+  .boxes .box .link {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
+  
+  /* Opnunartími */
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin-bottom: var(--spacing);
+  }
+  
+  /* Matseðill */
+  
+  table {
+    border-spacing: 0;
+  }
+  
+  table th,
+  table td {
+    padding: calc(var(--spacing) * 0.5);
+  }
+  
+  table tbody tr:nth-child(2n + 1) {
+    color: var(--color-dark);
+    background-color: var(--color-gold);
+  }
+  
+  /* Pöntunarform */
+  
+  fieldset {
+    border: var(--border-small) solid var(--color-dark);
+  }
+  
+  fieldset legend {
+    font-weight: bold;
+  }
+  
+  fieldset div label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  fieldset input,
+  fieldset select,
+  fieldset textarea {
+    padding: calc(var(--spacing) * 0.5);
+  }
+  
+  fieldset .checkbox label {
+    flex-direction: row;
+    gap: calc(var(--spacing) * 0.5);
+  }
+  
+  form button {
+    padding: calc(var(--spacing) * 0.25);
+    border-radius: var(--border-radius);
+  }
+  
+  .link {
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid var(--color-dark);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  
+  .link:hover {
+    background-color: var(--color-light); 
+    color: var(--color-dark); 
+    border: 1px solid var(--color-dark);
+  }
+  
+  /*loading opacity 0 to 1*/
+  body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+  
+  @media (min-width: 500px) {
+    .boxes {
+      grid-template-columns: repeat(var(--columns), 1fr);
+    }
+    .boxes .box {
+      grid-column: span 6;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .boxes .box {
+      grid-column: span 4; 
+    }
+  } 
+  
+  @media (min-width: 499px){
+    .foot-1 {
+      grid-column-end: span 6;
+    }
+    .offset-1 {
+      grid-column-start: 3;
+    }  
+    .foot-2 { 
+      grid-column-end: span 6;
+    }
+    .offset-2 {
+      grid-column-start: 3;
+    }
+  }
+  
+  
+  @media (min-width: 500px){
+    .foot-1 {
+      grid-column-end: span 4;
+    }
+    .offset-1 {
+      grid-column-start: 3;
+    }  
+    .foot-2 { 
+      grid-column-end: span 4;
+      margin-right: 50%;
+    }
+    .offset-2 {
+      grid-column-start: 7;
+    }
+  }
+  
+  
+  
+  @media (min-width: 2000px){
+    .foot-1 {
+      grid-column-start: span 2;
+    }
+    .offset-1 {
+      grid-column-start: 4;
+    }  
+    .foot-2 { 
+      grid-column-end: span 2;
+    }
+    .offset-2 {
+      grid-column-start: 8;
+    }
+  }
