@@ -8,15 +8,15 @@ let shopItemsData = [
     },
     {
         id: "2",
-        title: 'css sokkar',
-        description: 'Sokkar sem skalast vel með hvaða fótum sem er.',
+        name: 'css sokkar',
+        desc: 'Sokkar sem skalast vel með hvaða fótum sem er.',
         price: 3_000,
       img: "myndir/css-sokkar.jpg"
     },
     {
         id: "3",
-        title: 'JavaScript jakki',
-        description: 'Mjög töff jakki fyrir öll sem skrifa JavaScript reglulega.',
+        name: 'JavaScript jakki',
+        desc: 'Mjög töff jakki fyrir öll sem skrifa JavaScript reglulega.',
         price: 20_000,
         img: "myndir/js-jakki.jpg"
     }
