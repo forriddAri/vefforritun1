@@ -1,4 +1,6 @@
-
+/**
+* ! Changing default styles of the browser
+**/
 
 * {
   margin: 0;
@@ -54,7 +56,7 @@ a {
 }
 
 /**
-* items og styles
+* ! Shop items styles are here
 **/
 
 .shop {
@@ -62,6 +64,7 @@ a {
   grid-template-columns: repeat(4, 223px);
   gap: 30px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1000px) {
@@ -79,6 +82,10 @@ a {
 .item {
   border: 2px solid #212529;
   border-radius: 4px;
+}
+.item img {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
 }
 
 .details {
@@ -111,7 +118,7 @@ a {
 }
 
 /**
-* ! style rules fyrir label og ehv takka
+* ! style rules for label and some buttons
 **/
 
 .text-center {
@@ -143,7 +150,7 @@ a {
 }
 
 /**
-* ! style rules fyrir körfu
+* ! style rules for shopping-cart
 **/
 
 .shopping-cart {
@@ -154,7 +161,7 @@ a {
 }
 
 /**
-* ! style rules for hæuti í körfu
+* ! style rules for cart-item
 **/
 
 .cart-item {
