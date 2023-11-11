@@ -148,7 +148,7 @@ export function renderFrontpage(
   const heading = el(
     'h1',
     { class: 'heading', 'data-foo': 'bar' },
-    'Geimskotaleitin 🚀'
+    'Geimskotaleiti! 🚀'
   );
   const searchForm = renderSearchForm(searchHandler, query);
 
