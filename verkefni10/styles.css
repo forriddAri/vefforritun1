@@ -54,11 +54,10 @@ body{
 }
 
 .type-box{
-    border: solid 1px black;
+    border: solid black 1px;
     border-radius: 10px;
     padding: 3px;
     margin: 5px;
-
 }
 
 .fire{
@@ -129,7 +128,25 @@ body{
     
 }
 .psychic{
-    background-color: palevioletred;
-    
+    background-color: palevioletred;    
+}
+
+.pokemon-desc{
+    border: solid 1px black;
+
+}
+
+#pokemon-desc {
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 18px;
+    overflow-y: auto;
 }
 

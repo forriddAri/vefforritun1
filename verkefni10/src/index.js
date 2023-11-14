@@ -13,9 +13,12 @@ window.onload = async function() {
         pokemon.classList.add("pokemon-name");
         pokemon.addEventListener("click", updatePokemon);
         document.getElementById("pokemon-list").append(pokemon);
+
+        document.getElementById("pokemon-desc").innerText = pokedex[1]["desc"];
+        
     }
 
-    document.getElementById("pokemon-desc").innerText = pokedex[1]["desc"];
+   
 
     //console.log(pokedex);
 }
