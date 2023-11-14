@@ -1,0 +1,42 @@
+@font-face{
+    font-family: pokeFont; src: url(pkmn_rbygsc/PKMN\ RBYGSC.ttf);
+}
+body{
+    font-family: pokeFont;
+}
+#rammi{
+    width: 500px;
+    height: 500px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+
+    background-color: lightgreen;
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#pokemon-info{
+    width: 250px;
+    height: 500px;
+    background-color: lightblue;
+
+}
+
+#pokemon-list{
+    width: 250px;
+    height: 500px;
+    background-color: yellow;
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+.pokemon-name{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+
+}
