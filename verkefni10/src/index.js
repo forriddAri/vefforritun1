@@ -1,5 +1,5 @@
 
-const pokemonCount = 151;
+const pokemonCount = 1008;
 var pokedex = {}; // { 1 :  {"name" : "bulbasaur", "img" url, "type" : ["grass", "poison"], "desc" : "...."}  }
 
 window.onload = async function() {
@@ -45,8 +45,8 @@ function updatePokemon(){
 
     
     //clear types
-    let typesDiv = document.getElementById("pokemon-id");
-    while (!typesDiv.firstChild){
+    let typesDiv = document.getElementById("pokemon-types");
+    while (typesDiv.firstChild){
         typesDiv.firstChild.remove();
     }
     //update types
@@ -58,4 +58,6 @@ function updatePokemon(){
         type.classList.add(types[i]["type"]["name"]);
         typesDiv.append(type);
     }
+
+
 }
