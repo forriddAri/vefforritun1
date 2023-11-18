@@ -1,12 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", function(){
-  loadScript("src/categories.js", function() {
-    categoriesSetup();
-  });
-
-  
+  loadScript("src/categories.js", categoriesSetup);
   loadScript("src/products.js", productsSetup);
 });
+
 
 var categoriesSetup = function(){
   let categories = new Categories();
@@ -14,7 +11,10 @@ var categoriesSetup = function(){
 }
 
 var productsSetup = function(){
-  console.log('productsHere');
+  let products = new Products();
+  products.getAllProducts().then(productsArray => {
+    products.displayProducts(productsArray);
+  })
 }
 
 function loadScript(url, callback) {
@@ -22,7 +22,7 @@ function loadScript(url, callback) {
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.src = url;
-  
+  script.onreadystatechange = callback;
   script.onload = callback;
   head.appendChild(script);
 }

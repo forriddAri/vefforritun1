@@ -6,7 +6,7 @@ class Categories {
 
   async getAllCategories() {
     try {
-      const response = await fetch(this.apiUrl + "categories");
+      const response = await fetch(this.apiUrl + "categories?limit=12");
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
