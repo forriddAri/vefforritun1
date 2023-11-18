@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.voruflokkar,
+.nyjar-vorur {
+  width: 50%;
+  height: 500px;
+  border-radius: 10px;
+  border: solid;
+  margin: 0 auto;
+  margin-bottom: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: auto;
+}
+
+.box {
+  width: 50%; /* Full width for each box */
+  height: 60%;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 10px;
+  margin: 5px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box img {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: auto;
+  display: block;
+  padding: 5px;
+}
+
+h3, p{
+  width: 100%;
+}
+
+
+
