@@ -1,6 +1,7 @@
 class Products {
   constructor() {
     this.apiUrl = 'https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/';
+    this.container = null;
   }
 
   async getAllProducts() {
@@ -28,28 +29,36 @@ class Products {
       const box = document.createElement("div");
       box.classList.add("box");
 
-      const image = document.createElement("img");
-      image.style.maxWidth = '300px';
-      image.style.maxWidth = '150px';
+      const productLink = document.createElement("a");
+      productLink.href = 'sidur/vorusida.html?id=' + product.id;
 
-      image.src = product.image;
-      image.alt = product.title;
+      console.log('Product Link Href:', productLink.href);
+
+
+      const image = document.createElement("img");
+    image.style.maxWidth = '300px';
+    image.style.maxHeight = '150px';
+    image.src = product.image;
+    image.alt = product.title;
 
       const title = document.createElement("h3");
       title.textContent = product.title;
 
       const price = document.createElement("p");
-      price.textContent = `Price: $${product.price}`;
+      price.textContent = `Verð: ${product.price} kr.`;
+      price.style.display = 'block';
 
-      //const description = document.createElement("p");
-      //description.textContent = product.description;
-
+      const category = document.createElement("p");
+      category.textContent = product.category_title;
+      category.style.display = 'block';
      
 
       box.appendChild(title);
-      box.appendChild(price);
-      //box.appendChild(description);
       box.appendChild(image);
+      box.appendChild(price);
+      box.appendChild(category);
+      
+      box.appendChild(productLink);
 
       container.appendChild(box);
     });
