@@ -26,14 +26,9 @@ class Products {
     const productsToDisplay = products.slice(0, 6);
 
     productsToDisplay.forEach(product => {
-      const box = document.createElement("div");
-      box.classList.add("box");
-
-      const productLink = document.createElement("a");
-      productLink.href = 'sidur/vorusida.html?id=' + product.id;
-
-      console.log('Product Link Href:', productLink.href);
-
+      const box = document.createElement("a");
+      box.href = '../sidur/vorusida.html?id='+ product.id;
+      box.classList.add("box") ;
 
       const image = document.createElement("img");
     image.style.maxWidth = '300px';
@@ -57,10 +52,8 @@ class Products {
       box.appendChild(image);
       box.appendChild(price);
       box.appendChild(category);
-      
-      box.appendChild(productLink);
 
-      container.appendChild(box);
+     container.appendChild(box);
     });
   }
 }
