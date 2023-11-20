@@ -25,6 +25,7 @@ function getProductDetails(productId) {
   }
 
 function displayProductDetails(product){
+  console.log(product);
     // Get the container where product details will be displayed
     const productDetailsContainer = document.getElementById('product-details');
 
@@ -41,7 +42,7 @@ function displayProductDetails(product){
     descriptionElement.textContent = product.description;
 
     const imageElement = document.createElement('img');
-    imageElement.src = product.imageElement;
+    imageElement.src = product.image;
 
     // Append elements to the container
     productDetailsContainer.appendChild(titleElement);

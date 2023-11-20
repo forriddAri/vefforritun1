@@ -15,6 +15,7 @@ class Categories {
       const responseData = await response.json();
 
       const categories = responseData.items;
+      console.log(categories)
 
       if(!Array.isArray(categories)){
         throw new Error('API response er ekki fylki')
@@ -26,18 +27,18 @@ class Categories {
     }
   }
   
-  displayCategories(categories){
+  displayCategories(categories) {
     const voruflokkarDiv = document.querySelector('.voruflokkar');
-
-    //clear 
+  
+    // Clear the container
     voruflokkarDiv.innerHTML = '';
-
-    //adda voruflokk í voruflokkDiv
+  
     categories.forEach(category => {
-      const categoryBox = document.createElement('div');
+      const categoryBox = document.createElement('a');
+      categoryBox.href = '../sidur/voruflokkur.html?id=' + category.id; 
       categoryBox.classList.add('box');
       categoryBox.textContent = category.title;
-
+  
       voruflokkarDiv.appendChild(categoryBox);
     });
   }
