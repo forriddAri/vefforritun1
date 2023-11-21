@@ -40,7 +40,7 @@ class Products {
       title.textContent = product.title;
 
       const price = document.createElement("p");
-      price.textContent = `Verð: ${product.price} kr.`;
+      price.textContent = `Verð: ${product.price} kr.-`;
       price.style.display = 'block';
 
       const category = document.createElement("p");

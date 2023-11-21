@@ -18,6 +18,7 @@ class Vorulisti {
         this.renderProducts(productsArray);
       });
     }
+
   
     renderProducts(products) {
       const container = document.getElementById('all-products-container');
@@ -36,7 +37,7 @@ class Vorulisti {
         title.textContent = product.title;
   
         const price = document.createElement('p');
-        price.textContent = `Price: $${product.price}`;
+        price.textContent = `Verð: ${product.price} kr.-`;
         price.style.display = 'block';
   
         const category = document.createElement('p');
