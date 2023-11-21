@@ -49,5 +49,16 @@ h3, p{
   width: 100%;
 }
 
+.product-details{
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-
+.all-products-container{
+  width: 100%;
+}
+.related-products-container {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-top: 20px;
+}
