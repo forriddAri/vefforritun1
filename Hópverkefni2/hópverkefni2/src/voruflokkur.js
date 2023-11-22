@@ -1,11 +1,11 @@
 class Flokkur {
   constructor() {
-    this.apiUrl = 'https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/';
+    this.apiUrl = 'https://vef1-2023-h2-api-791d754dda5b.herokuapp.com/products';
   }
 
   async getProductsByCategory(categoryId) {
     try {
-      const response = await fetch(`${this.apiUrl}categories/${categoryId}/products`);
+      const response = await fetch(`${this.apiUrl}?categories/${categoryId}/products`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const flokkur = new Flokkur();
 
   const urlParams = new URLSearchParams(window.location.search);
-  const categoryId = urlParams.get('category');
+  const categoryId = urlParams.get('category_id');
 
   if (categoryId) {
     flokkur.displayProductsByCategory(categoryId);
