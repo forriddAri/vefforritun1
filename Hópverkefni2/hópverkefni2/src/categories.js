@@ -35,7 +35,7 @@ class Categories {
   
     categories.forEach(category => {
       const categoryBox = document.createElement('a');
-      categoryBox.href = '../sidur/voruflokkur.html?id=' + category.id; 
+      categoryBox.href = '../sidur/voruflokkur.html?category_id=' + category.id; 
       categoryBox.classList.add('box');
       categoryBox.textContent = category.title;
   
